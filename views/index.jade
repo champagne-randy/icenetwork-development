@@ -1,30 +1,33 @@
 //- metadata code block
-include ./includes/head
+include ./partials/head
 
 
 body
-	// header section
-	//- includes navBar
-	include ./includes/header
 
+	.page-wrapper
+		// header section
+		include ./partials/header
 
-	// main content
-	#wrapper
-		// aboutme
-		include ./includes/aboutme
+		// jumbotron
+		include ./partials/jumbotron
 
-		// services
-		include ./includes/services
+		// main content
+		.wrapper
+			// whatwedo
+			include ./partials/whatwedo
 
-		// portfolio
-		include ./includes/portfolio
+			// conceptproposal
+			include ./partials/conceptproposal
 
-		// contactme
-		include ./includes/contactme
+			// planningcommittee
+			include ./partials/planningcommittee
+
+			// contactus
+			include ./partials/contactus
 
 
 	// footer section
-	include ./includes/footer
+	include ./partials/footer
 
 
 	// JS libraries and scripts
@@ -37,4 +40,3 @@ body
 	//- project scripts
 	script(src='js/main.js')
 
-		
