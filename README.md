@@ -4,7 +4,7 @@
 
 * Status: ✔ In Development
 * Contributors: [@randychampagne](http://twitter.com/randychampagne)
-* Description: This repo holds the development environment for my portfolio site
+* Description: This repo holds the development environment for this project
 * Author: [Randy Champagne](http://www.randychampagne.com)
 * Author URI: [http://www.randychampagne.com](http://www.randychampagne.com)
 * License: GNU General Public License v3.0
