@@ -4,6 +4,7 @@ autoprefixer = require 'autoprefixer-stylus'
 css_pipeline = require 'css-pipeline'
 browserify   = require 'roots-browserify'
 babelify     = require 'babelify'
+wordpress    = require 'roots-wordpress'
 
 
 module.exports =
@@ -29,6 +30,10 @@ module.exports =
       sourceMap: true
       transform: babelify
       out: 'js/main.js'
+    wordpress
+      site: 'my-wordpress-site.com'
+      post_types:
+        post: { template: 'views/_single_post.jade' }
   ]
 
 
