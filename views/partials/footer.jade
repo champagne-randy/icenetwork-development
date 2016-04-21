@@ -1,12 +1,40 @@
 section#footer
 	.inner
-		h2.major.
+		
+		//-----------------
+		//- Static content
+		//-----------------
+		//-h2.major.
 			Get in touch
-		p.
+		//-p.
 			We would love to hear you. Go ahead and share your ideas, thoughts, on concerns in the form below. You should aslo drop by any of our social media pages and say hello.
 
+		
+		
 
+		//-----------------
+		//- Dynamic content
+		//-----------------
+		
+		//- hack: not sure why payload contains several empty post objects
+		if wordpress.post			
+			//- need to reverse order of payload
+			//- wordpress.post.reverse()
+			//- fetch post for this section
+			- var post = wordpress.post[4]
 
+			//- render section content
+			h2.major= post.title
+			div!= post.content
+
+	
+	
+
+		//-----------------
+		//- call to action
+		//-----------------
+
+		//- contact form
 		form(method="post" action="#")
 			.field
 				label(for="name").
@@ -28,7 +56,7 @@ section#footer
 					input(type="submit" value="Send Message")
 
 
-
+		//- contact info
 		ul.contact.hidden
 			li.fa-home.
 				Involved Community Network <br>
@@ -50,6 +78,8 @@ section#footer
 				a(href="#").
 					instagram.com/untitled-tld
 		
+
+		//- copyright
 		ul.copyright
 			li.
 				&copy; Involved Community Network. All rights reserved.
