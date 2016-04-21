@@ -40,5 +40,9 @@ module.exports =
   ]
 
 
+  stylus:
+    use: [axis(), rupture(), autoprefixer()]
+    sourcemap: true
+    
   jade:
     pretty: true
