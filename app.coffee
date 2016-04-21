@@ -6,14 +6,12 @@ css_pipeline = require 'css-pipeline'
 browserify   = require 'roots-browserify'
 babelify     = require 'babelify'
 wordpress    = require 'roots-wordpress'
-wpurl        = 'php-randytest2016.rhcloud.com'
+wpTestServer = 'php-randytest2016.rhcloud.com'
 
 
 module.exports =
   ignores: [
-    'README.md', 
     'ROADMAP.md', 
-    'LICENSE', 
     'bower*', 
     'bower_components/**', 
     'views/partials/**', 
@@ -34,7 +32,7 @@ module.exports =
       transform: babelify
       out: 'js/main.js'
     wordpress
-      site: wpurl
+      site: wpTestServer
       post_types:
         post: { template: 'views/single.jade' }
   ]
