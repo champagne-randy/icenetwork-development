@@ -1,6 +1,14 @@
-# Rodmap for bethelac.org
+# Rodmap for icenetwork.org
 
-These are some ideas I am ruminating.
+
+
+
+### Next Steps
+
+* Refactor dir structure
+- rename `views\partials` dir to `views\_partials`
+- update all references in `views\index.jade`
+- update `ingores` list in `app.coffee` and `app.production.coffee`
 
 
 
