@@ -6,9 +6,7 @@ css_pipeline = require 'css-pipeline'
 browserify   = require 'roots-browserify'
 babelify     = require 'babelify'
 wordpress    = require 'roots-wordpress'
-wpTestServer = 'php-randytest2016.rhcloud.com'
-
-
+cmsEndpoint  = 'php-randytest2016.rhcloud.com'
 
 
 module.exports =
@@ -28,8 +26,18 @@ module.exports =
   ]
 
   extensions: [
-    js_pipeline(files: 'assets/js/*.coffee', out: 'js/app.js', minify: true, hash: true),
     css_pipeline(files: 'assets/css/*.styl', out: 'css/style.css', minify: true, hash: true)
+    #js_pipeline(files: 'assets/js/*.coffee', out: 'js/app.js', minify: true, hash: true)
+    browserify
+      files: 'assets/js/main.es6'
+      sourceMap: false
+      transform: babelify
+      out: 'js/main.js'
+    wordpress
+      site: cmsEndpoint
+      post_types:
+        post: { template: 'views/single.jade' }
+    
   ]
 
   stylus:
