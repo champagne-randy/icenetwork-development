@@ -7,12 +7,14 @@ body
 		- console.log(wordpress.post)
 		
 
-		//- hack: not sure why payload contains several empty objects
+		//- hack: not sure why payload contains several empty post objects
 		if wordpress.post
+			//- let's reverse order
+			//- wordpress.post.reverse()
 			ul
 				each post in wordpress.post
 					li 
-						h4= post.title
+						h3 #{post.ID} - #{post.title}
 						p!= post.content
 
 
