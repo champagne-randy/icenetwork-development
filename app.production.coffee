@@ -8,14 +8,16 @@ module.exports =
   ignores: [
     'README.md', 
     'ROADMAP.md', 
-    'LICENSE', 
+    'LICENSE',
     'bower*', 
     'bower_components/**', 
-    'views/includes/**', 
+    'views/partials/**', 
     '**/layout.*', 
     '**/_*', 
     '.gitignore', 
-    'ship.*conf'
+    'ship.*conf',
+    '**/*.jpg_orig.jpg',
+    '.DS_Store'
   ]
 
   extensions: [
