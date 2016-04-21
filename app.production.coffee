@@ -1,8 +1,15 @@
 axis         = require 'axis'
 rupture      = require 'rupture'
 autoprefixer = require 'autoprefixer-stylus'
-js_pipeline  = require 'js-pipeline'
 css_pipeline = require 'css-pipeline'
+#js_pipeline  = require 'js-pipeline'
+browserify   = require 'roots-browserify'
+babelify     = require 'babelify'
+wordpress    = require 'roots-wordpress'
+wpTestServer = 'php-randytest2016.rhcloud.com'
+
+
+
 
 module.exports =
   ignores: [
