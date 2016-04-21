@@ -16,7 +16,7 @@ module.exports =
     'LICENSE', 
     'bower*', 
     'bower_components/**', 
-    'views/includes/**', 
+    'views/partials/**', 
     '**/layout.*', 
     '**/_*', 
     '.gitignore', 
@@ -43,6 +43,6 @@ module.exports =
   stylus:
     use: [axis(), rupture(), autoprefixer()]
     sourcemap: true
-    
+
   jade:
     pretty: true
