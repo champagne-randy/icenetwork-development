@@ -26,7 +26,7 @@ module.exports =
   ]
 
   extensions: [
-    css_pipeline(files: 'assets/css/*.styl', out: 'css/style.css', minify: true, hash: true)
+    css_pipeline(files: 'assets/css/*.styl', minify: true, hash: true)
     #js_pipeline(files: 'assets/js/*.coffee', out: 'js/app.js', minify: true, hash: true)
     browserify
       files: 'assets/js/main.es6'
