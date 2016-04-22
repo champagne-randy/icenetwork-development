@@ -103,5 +103,8 @@ babelify   = require 'babelify'
 
 ## Changelog
 
+###0.1.0
+* Configured CMS backend + Continuous Integration
+
 ###0.0.1
 * Initial development.
