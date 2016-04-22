@@ -165,5 +165,4 @@
 	});
 
 })(jQuery);
-},{}]},{},[1])
-//# sourceMappingURL=main.js.map
+},{}]},{},[1]);
