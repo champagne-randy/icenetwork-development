@@ -37,6 +37,7 @@ The tech debt list for version 0.1.x
 
 #### Hunt down and destroy the cursed black line
 * find css rule that's adding a black border at the bottom of each section
+* Note: It seems to be inconsistent (it's not always visible when I zoom). Is this a device/browser specific issue?
 
 
 
