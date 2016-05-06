@@ -13,7 +13,7 @@
 
 
 
-## About Me
+## About Us
 
 **[Involved Community Engagement Network](http://icenetworktv.github.io/)**
 
